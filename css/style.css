@@ -1,0 +1,205 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.fcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+/* #################################################### */
+/* ------------------  Header ------------------------- */
+/* #################################################### */
+header {
+  background-color: #aaa;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 8;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  height: 60px;
+  transition: all 0.6s;
+}
+header nav a:hover {
+  color: rgb(53, 53, 196);
+  border-bottom: 1px solid rgb(53, 53, 196);
+}
+header .search input {
+  width: 200px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+header .search button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  transition: all 0.6s;
+}
+header .search button:hover {
+  background-color: rgb(53, 53, 196);
+}
+header .bars {
+  display: none;
+}
+@media (max-width: 850px) {
+  header .search {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    z-index: 8;
+    background-color: #ccc;
+    gap: 0;
+    width: 100%;
+    height: 60px;
+    gap: 10px;
+  }
+  header .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 8;
+    background-color: #ccc;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+  
+  header .nav a {
+    width: 100%;
+    border: none ;
+  }
+  header .bars {
+    display: flex;
+    cursor: pointer;
+  }
+  
+header nav a:hover {
+    color: rgb(53, 53, 196);
+    border-bottom: none;
+    background-color: #bbb;
+  }
+  header .bars .fa-bars {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: all 0.6s;
+  }
+  header .bars .fa-bars:hover {
+    background-color: #949494e6;
+    border-radius: 50%;
+  }
+}
+/* #################################################### */
+/* ------------------  opening view  ------------------------- */
+/* #################################################### */
+.opening-view {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(750px - 60px);
+  background-color: #faf9f8;
+  position: relative;
+  top: 60px;
+}
+.opening-view .text-view {
+  max-width: 500px;
+}
+.opening-view .text-view h2 {
+  padding: 7px;
+  font-size: 26px;
+}
+.opening-view .image-view .dress {
+  animation: dressupdown 2s ease infinite;
+}
+
+@keyframes dressupdown {
+  0% {
+    translate: 0 -6px;
+  }
+  50% {
+    translate: 0 6px;
+  }
+  100% {
+    translate: 0 -6px;
+  }
+}
+@media (max-width: 900px) {
+  .opening-view {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(750px - 60px);
+    background-color: #faf9f8;
+  }
+  .opening-view .text-view {
+    padding: 0 20px;
+  }
+
+  .opening-view .image-view {
+    max-width: calc(100% - 40px);
+  }
+  .opening-view .image-view .dress {
+    width: 100%;
+  }
+}
+/* #################################################### */
+/* ------------------ Our Prodects  ------------------------- */
+/* #################################################### */
+.our-prodects {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-prodects  h3 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.our-prodects .cards {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+.our-prodects .card  {
+transition: all 0.7s ;
+width: 300px;
+}
+.our-prodects .card:hover  {
+    box-shadow: 0 0 3px 4px #ccc;
+}
+.our-prodects .card:hover .image img  {
+  filter: grayscale(1);
+}
+.our-prodects .card .image img {
+width: 100%;
+transition: all 0.7s ;
+}
+.our-prodects .card .card-info h4 {
+font-size: 24px;
+padding: 7px;
+}
+.our-prodects .card .card-info p {
+    padding: 5px;
+}

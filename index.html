@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>roma store</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="fcc">Roma Store</h1>
+      <nav class="nav fcc" id="nav">
+        <a class="nav-link fcc" href="">Home</a>
+        <a class="nav-link fcc" href="">About</a>
+        <a class="nav-link fcc" href="">Blog</a>
+        <a class="nav-link fcc" href="">Contact Us</a>
+      </nav>
+      <div class="search fcc" id="search">
+        <input type="search" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+      <div class="bars fcc" id="bars">
+        <i class="fa-solid fa-bars fcc"></i>
+      </div>
+    </header>
+    <main>
+      <section class="opening-view">
+        <div class="text-view">
+          <h2>Roma Store</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            accusantium sint ipsum, dolore quia voluptatibus alias blanditiis
+            amet totam eum, adipisci corrupti. Vero consectetur delectus, velit
+            quis nostrum laboriosam laborum.
+          </p>
+        </div>
+        <div class="image-view">
+          <img class="dress" src="media/dress.png" alt="dress" />
+        </div>
+      </section>
+      <section class="our-prodects">
+        <h3>Our Prodects</h3>
+        <div class="cards">
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="media/clothes.png" alt="clothes" />
+            </div>
+            <div class="card-info">
+              <h4>cloths</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deserunt repellat iste minus quas! Harum asperiores doloremque
+                placeat dignissimos consectetur totam possimus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    let bars = document.getElementById("bars");
+    let search = document.getElementById("search");
+    let nav = document.getElementById("nav");
+    bars.addEventListener("click", () => {
+      if (nav.style.display === "flex" && search.style.display === "flex") {
+        nav.style.display = "none";
+        search.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        search.style.display = "flex";
+      }
+    });
+  </script>
+</html>
